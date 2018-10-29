@@ -1,0 +1,40 @@
+service: aws-node-mysql
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: prod
+  region: us-east-1
+
+functions:
+  get:
+    handler: handler.get
+    events:
+      - http:
+          path: getPath
+          method: get
+          cors: true
+
+  post:
+    handler: handler.post
+    events:
+      - http:
+          path: postPath
+          method: post
+          cors: true
+
+  put:
+    handler: handler.put
+    events:
+      - http:
+          path: putPath
+          method: put
+          cors: true
+
+  delete:
+    handler: handler.delete
+    events:
+      - http:
+          path: deletePath
+          method: delete
+          cors: true

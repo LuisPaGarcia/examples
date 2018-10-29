@@ -1,0 +1,20 @@
+{
+  "name": "aws-node-mysql",
+  "version": "1.0.0",
+  "description": "Basic example to create serverless functions on aws using mysql",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luispa",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.15.2",
+    "validator": "^10.8.0"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
